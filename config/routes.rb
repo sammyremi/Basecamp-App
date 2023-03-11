@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users, :controller => {registrations: 'registrations'}
+  devise_for :users, :controllers => {registrations: 'registrations'}
+  devise_scope :user do
+    get '/users/sign_out', to: 'devise/sessions#destroy'
+  end
   resources :projects
   root 'home#index'
 
@@ -9,3 +12,4 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 end
+
