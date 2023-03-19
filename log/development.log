@@ -10064,3 +10064,76 @@ Completed 200 OK in 91ms (Views: 84.6ms | ActiveRecord: 0.4ms | Allocations: 530
   [1m[36mUser Update (3.1ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "role" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2023-03-19 00:16:20.761491"], ["role", 2], ["id", 17]]
   [1m[36mTRANSACTION (111.2ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for ::1 at 2023-03-19 01:30:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 69.0ms | Allocations: 10114)
+  Rendered home/_navbar.html.erb (Duration: 1.6ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 344.5ms | Allocations: 54377)
+Completed 200 OK in 418ms (Views: 366.9ms | ActiveRecord: 2.3ms | Allocations: 57713)
+
+
+Started GET "/users/sign_out" for ::1 at 2023-03-19 01:30:26 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 54ms (ActiveRecord: 0.4ms | Allocations: 4598)
+
+
+Started GET "/" for ::1 at 2023-03-19 01:30:27 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 643)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 32)
+  Rendered layouts/_alerts.html.erb (Duration: 1.1ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3990)
+Completed 200 OK in 46ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 4319)
+
+
+Started GET "/" for ::1 at 2023-03-19 01:30:34 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 474)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 3416)
+Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 3705)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-03-19 01:30:37 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 669)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 216.2ms | Allocations: 3970)
+  Rendered home/_navbar.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 286.9ms | Allocations: 7153)
+Completed 200 OK in 520ms (Views: 308.9ms | ActiveRecord: 0.0ms | Allocations: 14593)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-03-19 01:30:41 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"adekoyadayo2010@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adekoyadayo2010@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 303 See Other in 431ms (ActiveRecord: 0.6ms | Allocations: 4487)
+
+
+Started GET "/" for ::1 at 2023-03-19 01:30:42 +0100
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1285)
+  Rendered home/_navbar.html.erb (Duration: 0.4ms | Allocations: 197)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 4660)
+Completed 200 OK in 62ms (Views: 54.0ms | ActiveRecord: 0.4ms | Allocations: 5034)
+
+
