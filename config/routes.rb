@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/users/sign_out', to: 'devise/sessions#destroy'
   end
+
+  namespace :admin do
+    resources :users, except: [:new, :create]
+  end
   
   resources :projects
   root 'home#index'
