@@ -29,7 +29,7 @@ class ProjectsController < ApplicationController
 
     @project = current_user.projects.build(project_params)
 
-    respond_to do |format|
+    respond_to do |format| 
       if @project.save
         format.html { redirect_to project_url(@project), notice: "Project was successfully created." }
         format.json { render :show, status: :created, location: @project }
