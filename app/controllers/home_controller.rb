@@ -1,12 +1,8 @@
 class HomeController < ApplicationController
   def index
-    # @user_admin = User.all
-    # @user_admin = @user_admin.user
-  end
-
-  def admin
-    @user_admin = User.all
-
+    if current_user
+      redirect_to projects_path
+    end
   end
 
 end
