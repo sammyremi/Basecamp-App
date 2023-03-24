@@ -18,8 +18,20 @@
 
   <div class="container">
 
-    <% if notice %>
-      <%= render 'layouts/alerts'%>
+    <% if signed_in? %>
+      <% @status = current_user.admin %>
+      <% if @status == true %>
+        <h3>Status: Admin</h3>
+        </br>
+        </br>
+      <%end%>
+
+      <% if @status == false %>
+        <h3>Status: User</h3>
+        </br>
+        </br>
+      <%end%>
+
     <%end%>
 
     <%= yield %>
