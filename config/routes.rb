@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get "error", to: "home#error"
+  
   namespace :admin do
       resources :projects
       resources :users

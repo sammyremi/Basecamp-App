@@ -7,9 +7,15 @@
 module Admin
   class ApplicationController < Administrate::ApplicationController
     before_action :authenticate_user!
+    before_action :authenticate_admin
 
     def authenticate_admin
       # TODO Add authentication logic here.
+      if current_user.admin == false
+
+        redirect_to error_path
+        
+      end
     end
 
     # Override this value to specify the number of elements to display at a time
@@ -18,4 +24,6 @@ module Admin
     #   params[:per_page] || 20
     # end
   end
+
+
 end
