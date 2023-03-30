@@ -35378,3 +35378,867 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 0.6ms | Allocations: 8498)
 
 
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 12:56:10 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/error
+Filter chain halted as :authenticate_admin rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms | Allocations: 2806)
+
+
+Started GET "/error" for 127.0.0.1 at 2023-03-30 12:56:10 +0100
+Processing by HomeController#error as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/error.html.erb within layouts/application
+  Rendered home/error.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:3
+  Rendered home/_navbar.html.erb (Duration: 2.7ms | Allocations: 1011)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 4945)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5214)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 12:56:23 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/error
+Filter chain halted as :authenticate_admin rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2630)
+
+
+Started GET "/error" for 127.0.0.1 at 2023-03-30 12:56:23 +0100
+Processing by HomeController#error as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/error.html.erb within layouts/application
+  Rendered home/error.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:3
+  Rendered home/_navbar.html.erb (Duration: 2.4ms | Allocations: 1011)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4943)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5211)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 12:56:25 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/error
+Filter chain halted as :authenticate_admin rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2651)
+
+
+Started GET "/error" for 127.0.0.1 at 2023-03-30 12:56:25 +0100
+Processing by HomeController#error as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/error.html.erb within layouts/application
+  Rendered home/error.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:3
+  Rendered home/_navbar.html.erb (Duration: 2.4ms | Allocations: 1011)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4919)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 5188)
+
+
+Started GET "/projects" for 127.0.0.1 at 2023-03-30 12:56:27 +0100
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:8
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 22)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:8
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered projects/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2960)
+  Rendered home/_navbar.html.erb (Duration: 0.5ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 5771)
+Completed 200 OK in 28ms (Views: 22.5ms | ActiveRecord: 1.0ms | Allocations: 8547)
+
+
+Started GET "/projects/19" for 127.0.0.1 at 2023-03-30 12:56:31 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:85:in `set_project'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 401)
+  Rendered home/_navbar.html.erb (Duration: 0.5ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3213)
+Completed 200 OK in 21ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 6488)
+
+
+Started GET "/projects/19" for 127.0.0.1 at 2023-03-30 12:58:21 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:85:in `set_project'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/_project.html.erb (Duration: 0.4ms | Allocations: 202)
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 892)
+  Rendered home/_navbar.html.erb (Duration: 1.0ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4428)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 8213)
+
+
+Started GET "/projects/19/edit" for 127.0.0.1 at 2023-03-30 12:59:11 +0100
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:85:in `set_project'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ? AND "projects"."id" = ? LIMIT ?[0m  [["user_id", 20], ["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `correct_user'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 3.9ms | Allocations: 1361)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1692)
+  Rendered home/_navbar.html.erb (Duration: 0.3ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4518)
+Completed 200 OK in 19ms (Views: 10.2ms | ActiveRecord: 1.1ms | Allocations: 8610)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 12:59:16 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/error
+Filter chain halted as :authenticate_admin rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 2630)
+
+
+Started GET "/error" for 127.0.0.1 at 2023-03-30 12:59:16 +0100
+Processing by HomeController#error as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/error.html.erb within layouts/application
+  Rendered home/error.html.erb within layouts/application (Duration: 0.5ms | Allocations: 89)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:3
+  Rendered home/_navbar.html.erb (Duration: 2.5ms | Allocations: 1044)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5119)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 5727)
+
+
+Started GET "/projects" for 127.0.0.1 at 2023-03-30 12:59:55 +0100
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:8
+  Rendered projects/_project.html.erb (Duration: 0.5ms | Allocations: 169)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:8
+  Rendered projects/_project.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3384)
+  Rendered home/_navbar.html.erb (Duration: 0.8ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 6933)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.6ms | Allocations: 10271)
+
+
+Started GET "/projects/19" for 127.0.0.1 at 2023-03-30 12:59:59 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:85:in `set_project'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/_project.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 581)
+  Rendered home/_navbar.html.erb (Duration: 0.5ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3393)
+Completed 200 OK in 22ms (Views: 10.8ms | ActiveRecord: 0.9ms | Allocations: 6712)
+
+
+Started GET "/projects/19/edit" for 127.0.0.1 at 2023-03-30 13:00:10 +0100
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:85:in `set_project'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ? AND "projects"."id" = ? LIMIT ?[0m  [["user_id", 20], ["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `correct_user'
+  Rendering layout layouts/application.html.erb
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (Duration: 4.6ms | Allocations: 1344)
+  Rendered projects/edit.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1672)
+  Rendered home/_navbar.html.erb (Duration: 0.5ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4475)
+Completed 200 OK in 28ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 8531)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  [1m[36mTRANSACTION (60.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  [1m[36mTRANSACTION (64.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 18]]
+  [1m[36mTRANSACTION (66.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.6ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 19]]
+  [1m[36mTRANSACTION (63.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Destroy (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = ?[0m  [["id", 20]]
+  [1m[36mTRANSACTION (65.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/projects/19/edit" for 127.0.0.1 at 2023-03-30 13:00:47 +0100
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:85:in `set_project'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.2ms | Allocations: 977)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Project with 'id'=19):
+  
+app/controllers/projects_controller.rb:85:in `set_project'
+Started GET "/projects" for 127.0.0.1 at 2023-03-30 13:00:55 +0100
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.2ms | Allocations: 2525)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-30 13:00:55 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 555)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2080)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 4824)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 7073)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:00:59 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 346)
+  Rendered home/_navbar.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3063)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:01:00 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+  Rendered home/_navbar.html.erb (Duration: 0.6ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2771)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4439)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:01:00 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2762)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 4405)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:01:00 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 115)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2751)
+Completed 200 OK in 18ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 4415)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:01:01 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2748)
+Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4410)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-03-30 13:01:02 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.0ms | Allocations: 2334)
+  Rendered home/_navbar.html.erb (Duration: 0.3ms | Allocations: 55)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 5067)
+Completed 200 OK in 45ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 7640)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-30 13:01:22 +0100
+Processing by RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"user1", "email"=>"user1@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user1@g.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "name", "admin") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "user1@g.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-03-30 12:01:22.482555"], ["updated_at", "2023-03-30 12:01:22.482555"], ["name", "user1"], ["admin", 0]]
+  [1m[36mTRANSACTION (279.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/projects
+Completed 303 See Other in 586ms (ActiveRecord: 280.0ms | Allocations: 8588)
+
+
+Started GET "/projects" for 127.0.0.1 at 2023-03-30 13:01:22 +0100
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:7
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 606)
+  Rendered home/_navbar.html.erb (Duration: 0.7ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3464)
+Completed 200 OK in 20ms (Views: 14.0ms | ActiveRecord: 0.3ms | Allocations: 6285)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 13:01:27 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/error
+Filter chain halted as :authenticate_admin rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2630)
+
+
+Started GET "/error" for 127.0.0.1 at 2023-03-30 13:01:27 +0100
+Processing by HomeController#error as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/error.html.erb within layouts/application
+  Rendered home/error.html.erb within layouts/application (Duration: 0.4ms | Allocations: 86)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:3
+  Rendered home/_navbar.html.erb (Duration: 2.3ms | Allocations: 1028)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 5002)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 5327)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2023-03-30 13:01:35 +0100
+Processing by RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 18.6ms | Allocations: 2216)
+  Rendered home/_navbar.html.erb (Duration: 0.3ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 5074)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 0.1ms | Allocations: 8112)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-03-30 13:01:39 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.1ms | Allocations: 2921)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:01:39 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 115)
+  Rendered home/_navbar.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2753)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4403)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-03-30 13:01:42 +0100
+Processing by RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1429)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4082)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-30 13:02:00 +0100
+Processing by RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"user2", "email"=>"user2@g.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user2@g.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "name", "admin") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "user2@g.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-03-30 12:02:00.986403"], ["updated_at", "2023-03-30 12:02:00.986403"], ["name", "user2"], ["admin", 0]]
+  [1m[36mTRANSACTION (67.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 368ms (ActiveRecord: 67.8ms | Allocations: 7096)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:02:01 +0100
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2219)
+
+
+Started GET "/projects" for 127.0.0.1 at 2023-03-30 13:02:01 +0100
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:7
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 606)
+  Rendered home/_navbar.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3421)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 6198)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 13:02:06 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/error
+Filter chain halted as :authenticate_admin rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2636)
+
+
+Started GET "/error" for 127.0.0.1 at 2023-03-30 13:02:06 +0100
+Processing by HomeController#error as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/error.html.erb within layouts/application
+  Rendered home/error.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/home/_navbar.html.erb:3
+  Rendered home/_navbar.html.erb (Duration: 2.4ms | Allocations: 1011)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4922)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 5191)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2023-03-30 13:03:42 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 7ms (ActiveRecord: 0.2ms | Allocations: 2929)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:03:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+  Rendered home/_navbar.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2772)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4408)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "admin" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2023-03-30 12:05:39.021879"], ["admin", 1], ["id", 21]]
+  [1m[36mTRANSACTION (108.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-03-30 13:06:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 680)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 6182)
+  Rendered home/_navbar.html.erb (Duration: 0.7ms | Allocations: 382)
+  Rendered layout layouts/application.html.erb (Duration: 145.4ms | Allocations: 52956)
+Completed 200 OK in 185ms (Views: 152.5ms | ActiveRecord: 1.8ms | Allocations: 64180)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-03-30 13:06:39 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"user1@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@g.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 318ms (ActiveRecord: 0.5ms | Allocations: 5015)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"user1@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1235)
+  Rendered home/_navbar.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3838)
+Completed 200 OK in 309ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4435)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-03-30 13:06:44 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"user1@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@g.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 300ms (ActiveRecord: 0.2ms | Allocations: 2696)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"user1@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 132)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1224)
+  Rendered home/_navbar.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3827)
+Completed 200 OK in 306ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 4352)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-03-30 13:06:48 +0100
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"user1@g.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@g.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 301ms (ActiveRecord: 0.2ms | Allocations: 4486)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-30 13:06:48 +0100
+Processing by HomeController#index as TURBO_STREAM
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3:in `index'
+Redirected to http://127.0.0.1:3000/projects
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms | Allocations: 2325)
+
+
+Started GET "/projects" for 127.0.0.1 at 2023-03-30 13:06:48 +0100
+Processing by ProjectsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:7
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 971)
+  Rendered home/_navbar.html.erb (Duration: 0.4ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3993)
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 8125)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 13:06:51 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering admin/application/index.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 2.1ms | Allocations: 1311)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 14.0ms | Allocations: 5327)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.5ms | Allocations: 149)
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/admin/application/_collection.html.erb:60
+  Rendered admin/application/_collection.html.erb (Duration: 11.5ms | Allocations: 4159)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 2.3ms | Allocations: 827)
+  Rendered admin/application/index.html.erb within layouts/admin/application (Duration: 32.5ms | Allocations: 11733)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 5.5ms | Allocations: 1996)
+  Rendered admin/application/_icons.html.erb (Duration: 0.5ms | Allocations: 100)
+  Rendered admin/application/_navigation.html.erb (Duration: 4.1ms | Allocations: 1485)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.8ms | Allocations: 252)
+  Rendered admin/application/_javascript.html.erb (Duration: 5.2ms | Allocations: 2098)
+  Rendered layout layouts/admin/application.html.erb (Duration: 54.8ms | Allocations: 19526)
+Completed 200 OK in 73ms (Views: 56.8ms | ActiveRecord: 1.3ms | Allocations: 25435)
+
+
+Started GET "/admin" for 127.0.0.1 at 2023-03-30 13:06:51 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering admin/application/index.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 2.4ms | Allocations: 292)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 7.0ms | Allocations: 1372)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.2ms | Allocations: 31)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/admin/application/_collection.html.erb:60
+  Rendered admin/application/_collection.html.erb (Duration: 6.4ms | Allocations: 2419)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.7ms | Allocations: 107)
+  Rendered admin/application/index.html.erb within layouts/admin/application (Duration: 15.3ms | Allocations: 4200)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 4.9ms | Allocations: 1764)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 4.8ms | Allocations: 1178)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.3ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 5.2ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 34.8ms | Allocations: 9597)
+Completed 200 OK in 48ms (Views: 36.2ms | ActiveRecord: 0.4ms | Allocations: 12678)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-03-30 13:06:54 +0100
+Processing by Admin::ProjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering admin/application/index.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 1.0ms | Allocations: 292)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 4.4ms | Allocations: 1372)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 31)
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/admin/application/_collection.html.erb:60
+  Rendered admin/application/_collection.html.erb (Duration: 6.6ms | Allocations: 2419)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.7ms | Allocations: 105)
+  Rendered admin/application/index.html.erb within layouts/admin/application (Duration: 13.1ms | Allocations: 4198)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 3.9ms | Allocations: 1764)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 2.2ms | Allocations: 1178)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 5.0ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 26.9ms | Allocations: 9595)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.3ms | Allocations: 12660)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2023-03-30 13:06:56 +0100
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering admin/application/index.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 1.3ms | Allocations: 329)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 6.0ms | Allocations: 1583)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.2ms | Allocations: 32)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/admin/application/_collection.html.erb:60
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_index.html.erb (Duration: 0.8ms | Allocations: 155)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_index.html.erb (Duration: 1.0ms | Allocations: 139)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.6ms | Allocations: 141)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_item_actions.html.erb (Duration: 2.0ms | Allocations: 514)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_index.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_index.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_item_actions.html.erb (Duration: 1.4ms | Allocations: 289)
+  Rendered admin/application/_collection.html.erb (Duration: 25.9ms | Allocations: 5936)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 1.1ms | Allocations: 142)
+  Rendered admin/application/index.html.erb within layouts/admin/application (Duration: 35.9ms | Allocations: 8351)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 5.1ms | Allocations: 1808)
+  Rendered admin/application/_icons.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered admin/application/_navigation.html.erb (Duration: 6.8ms | Allocations: 1190)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.4ms | Allocations: 23)
+  Rendered admin/application/_javascript.html.erb (Duration: 20.2ms | Allocations: 1841)
+  Rendered layout layouts/admin/application.html.erb (Duration: 74.7ms | Allocations: 14475)
+Completed 200 OK in 85ms (Views: 77.0ms | ActiveRecord: 0.7ms | Allocations: 18236)
+
+
+Started GET "/admin/users/21/edit" for 127.0.0.1 at 2023-03-30 13:07:03 +0100
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/edit.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_form.html.erb (Duration: 15.1ms | Allocations: 447)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 1.6ms | Allocations: 427)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.8ms | Allocations: 255)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 1.0ms | Allocations: 258)
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mProject Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "projects" WHERE "projects"."user_id" = ? LIMIT ?[0m  [["user_id", 21], ["LIMIT", 1]]
+  [1m[36mProject Pluck (0.3ms)[0m  [1m[34mSELECT "projects"."id" FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 21]]
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/has_many/_form.html.erb (Duration: 21.1ms | Allocations: 6082)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 17.5ms | Allocations: 571)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 0.8ms | Allocations: 278)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.8ms | Allocations: 268)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_form.html.erb (Duration: 74.0ms | Allocations: 12243)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/edit.html.erb within layouts/admin/application (Duration: 79.1ms | Allocations: 13575)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 5.0ms | Allocations: 1767)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 3.0ms | Allocations: 1189)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 4.4ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 94.5ms | Allocations: 18970)
+Completed 200 OK in 116ms (Views: 102.0ms | ActiveRecord: 1.3ms | Allocations: 23284)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2023-03-30 13:07:17 +0100
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering admin/application/index.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 2.1ms | Allocations: 292)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 5.8ms | Allocations: 1374)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.1ms | Allocations: 31)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/admin/application/_collection.html.erb:60
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_index.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_index.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_item_actions.html.erb (Duration: 2.0ms | Allocations: 289)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_index.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_index.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.2ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_item_actions.html.erb (Duration: 2.1ms | Allocations: 289)
+  Rendered admin/application/_collection.html.erb (Duration: 18.4ms | Allocations: 4429)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.5ms | Allocations: 107)
+  Rendered admin/application/index.html.erb within layouts/admin/application (Duration: 26.2ms | Allocations: 6212)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 7.8ms | Allocations: 1764)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 4.2ms | Allocations: 1178)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 9.0ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 50.5ms | Allocations: 11609)
+Completed 200 OK in 57ms (Views: 51.1ms | ActiveRecord: 0.4ms | Allocations: 14697)
+
+
+Started GET "/admin/users/22/edit" for 127.0.0.1 at 2023-03-30 13:07:20 +0100
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/edit.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_form.html.erb (Duration: 0.9ms | Allocations: 277)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 1.0ms | Allocations: 234)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.9ms | Allocations: 239)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.5ms | Allocations: 234)
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mProject Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "projects" WHERE "projects"."user_id" = ? LIMIT ?[0m  [["user_id", 22], ["LIMIT", 1]]
+  [1m[36mProject Pluck (0.1ms)[0m  [1m[34mSELECT "projects"."id" FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 22]]
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/has_many/_form.html.erb (Duration: 15.3ms | Allocations: 5199)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 0.6ms | Allocations: 243)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_form.html.erb (Duration: 0.6ms | Allocations: 247)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_form.html.erb (Duration: 0.7ms | Allocations: 235)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_form.html.erb (Duration: 27.4ms | Allocations: 8131)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/edit.html.erb within layouts/admin/application (Duration: 29.8ms | Allocations: 8901)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 4.2ms | Allocations: 1764)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 3.8ms | Allocations: 1188)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 5.1ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 46.4ms | Allocations: 14292)
+Completed 200 OK in 54ms (Views: 46.9ms | ActiveRecord: 0.7ms | Allocations: 18236)
+
+
+Started PATCH "/admin/users/22" for 127.0.0.1 at 2023-03-30 13:07:27 +0100
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"admin"=>"1", "email"=>"user2@g.com", "encrypted_password"=>"[FILTERED]", "name"=>"user2", "project_ids"=>[""], "remember_created_at"=>"", "reset_password_sent_at"=>"[FILTERED]", "reset_password_token"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = ?[0m  [["user_id", 22]]
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = ?, "updated_at" = ?, "admin" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "[FILTERED]"], ["updated_at", "2023-03-30 12:07:27.759990"], ["admin", 1], ["id", 22]]
+  [1m[36mTRANSACTION (216.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/admin/users/22
+Completed 302 Found in 248ms (ActiveRecord: 217.9ms | Allocations: 11039)
+
+
+Started GET "/admin/users/22" for 127.0.0.1 at 2023-03-30 13:07:28 +0100
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_show.html.erb (Duration: 0.9ms | Allocations: 149)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_show.html.erb (Duration: 11.2ms | Allocations: 137)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mProject Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 22], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/has_many/_show.html.erb (Duration: 17.7ms | Allocations: 1995)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 1.4ms | Allocations: 162)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.3ms | Allocations: 8)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 1.8ms | Allocations: 124)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.2ms | Allocations: 69)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/admin/application (Duration: 62.3ms | Allocations: 6924)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 5.9ms | Allocations: 1774)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 3.9ms | Allocations: 1189)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.4ms | Allocations: 27)
+  Rendered admin/application/_javascript.html.erb (Duration: 5.9ms | Allocations: 1849)
+  Rendered layout layouts/admin/application.html.erb (Duration: 82.9ms | Allocations: 12345)
+Completed 200 OK in 97ms (Views: 86.7ms | ActiveRecord: 0.8ms | Allocations: 16619)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2023-03-30 13:07:38 +0100
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering admin/application/index.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_search.html.erb (Duration: 1.1ms | Allocations: 292)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_index_header.html.erb (Duration: 4.6ms | Allocations: 1375)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_header_actions.html.erb (Duration: 0.2ms | Allocations: 31)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/views/admin/application/_collection.html.erb:60
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_index.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_index.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_item_actions.html.erb (Duration: 1.1ms | Allocations: 289)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_index.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_index.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_index.html.erb (Duration: 0.2ms | Allocations: 11)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_collection_item_actions.html.erb (Duration: 0.7ms | Allocations: 289)
+  Rendered admin/application/_collection.html.erb (Duration: 25.3ms | Allocations: 4430)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/_pagination.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered admin/application/index.html.erb within layouts/admin/application (Duration: 31.9ms | Allocations: 6212)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 3.0ms | Allocations: 1765)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 4.2ms | Allocations: 1178)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 3.8ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 46.2ms | Allocations: 11610)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 0.3ms | Allocations: 14676)
+
+
+Started GET "/admin/users/22" for 127.0.0.1 at 2023-03-30 13:57:22 +0100
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_show.html.erb (Duration: 1.7ms | Allocations: 148)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_show.html.erb (Duration: 1.3ms | Allocations: 136)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mProject Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 22], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/has_many/_show.html.erb (Duration: 4.3ms | Allocations: 1945)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.5ms | Allocations: 160)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/admin/application (Duration: 26.4ms | Allocations: 6745)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 5.9ms | Allocations: 1984)
+  Rendered admin/application/_icons.html.erb (Duration: 0.4ms | Allocations: 98)
+  Rendered admin/application/_navigation.html.erb (Duration: 4.9ms | Allocations: 1401)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.9ms | Allocations: 241)
+  Rendered admin/application/_javascript.html.erb (Duration: 6.8ms | Allocations: 2083)
+  Rendered layout layouts/admin/application.html.erb (Duration: 53.5ms | Allocations: 14354)
+Completed 200 OK in 68ms (Views: 58.2ms | ActiveRecord: 1.3ms | Allocations: 19330)
+
+
+Started GET "/admin/users/22" for 127.0.0.1 at 2023-03-30 13:57:24 +0100
+Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering layout layouts/admin/application.html.erb
+  Rendering /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/admin/application
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/number/_show.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/boolean/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  [1m[36mProject Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "projects" WHERE "projects"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 22], ["LIMIT", 1], ["OFFSET", 0]]
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/has_many/_show.html.erb (Duration: 5.0ms | Allocations: 1679)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/string/_show.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.5ms | Allocations: 69)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/fields/date_time/_show.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered /home/sammyremi/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/administrate-0.18.0/app/views/administrate/application/show.html.erb within layouts/admin/application (Duration: 21.3ms | Allocations: 5157)
+  Rendered admin/application/_stylesheet.html.erb (Duration: 6.6ms | Allocations: 1764)
+  Rendered admin/application/_icons.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered admin/application/_navigation.html.erb (Duration: 4.4ms | Allocations: 1188)
+  Rendered admin/application/_flashes.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered admin/application/_javascript.html.erb (Duration: 5.4ms | Allocations: 1837)
+  Rendered layout layouts/admin/application.html.erb (Duration: 41.4ms | Allocations: 10549)
+Completed 200 OK in 50ms (Views: 42.3ms | ActiveRecord: 0.6ms | Allocations: 14491)
+
+
