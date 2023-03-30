@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!
   before_action :correct_user, only:[:edit, :update, :destroy]
 
   # GET /projects or /projects.json
@@ -18,6 +18,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects/new
   def new
+
     @project = current_user.projects.build
   end
 
@@ -62,10 +63,10 @@ class ProjectsController < ApplicationController
 
   # DELETE /projects/1 or /projects/1.json
   def destroy
-    @project.destroy
+    
 
     if current_user
-
+      @project.destroy
       respond_to do |format|
         format.html { redirect_to projects_url, notice: "Project was successfully destroyed." }
         format.json { head :no_content }
