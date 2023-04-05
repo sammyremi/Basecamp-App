@@ -37,6 +37,9 @@ How to Set First Admin User from console
 
 Run server
     bundle install
+
+    rails server
+    
     bundle exec puma -C config/puma.rb -b tcp://127.0.0.1:3001
 
 ```
