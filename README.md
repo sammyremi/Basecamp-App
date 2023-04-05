@@ -36,14 +36,17 @@ How to Set First Admin User from console
     Note: after admin is set subsequent users can be set from edit on admin panel
 
 Run server
+
     bundle install
 
     rails server
-    
+
+if port keeps showing already in use run
+
     bundle exec puma -C config/puma.rb -b tcp://127.0.0.1:3001
 
 ```
-./my_project Samuel Adebayo,  
+./my_project Samuel Adebayo,  Abeeb Raheem
 ```
 
 ### The Core Team
