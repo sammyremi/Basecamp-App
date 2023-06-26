@@ -12,7 +12,6 @@ class UserDashboard < Administrate::BaseDashboard
     admin: Field::Boolean,
     email: Field::String,
     encrypted_password: Field::String,
-    name: Field::String,
     projects: Field::HasMany,
     remember_created_at: Field::DateTime,
     reset_password_sent_at: Field::DateTime,
@@ -40,7 +39,6 @@ class UserDashboard < Administrate::BaseDashboard
     admin
     email
     encrypted_password
-    name
     projects
     remember_created_at
     reset_password_sent_at
@@ -56,7 +54,6 @@ class UserDashboard < Administrate::BaseDashboard
     admin
     email
     encrypted_password
-    name
     projects
     remember_created_at
     reset_password_sent_at

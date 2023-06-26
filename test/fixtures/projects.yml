@@ -2,8 +2,10 @@
 
 one:
   name: MyString
-  discussion: MyString
+  description: MyText
+  user: one
 
 two:
   name: MyString
-  discussion: MyString
+  description: MyText
+  user: two

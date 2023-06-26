@@ -6,15 +6,15 @@
 # you're free to overwrite the RESTful controller actions.
 module Admin
   class ApplicationController < Administrate::ApplicationController
-    before_action :authenticate_user!
     before_action :authenticate_admin
 
     def authenticate_admin
-      # TODO Add authentication logic here.
-      if current_user.admin == false
-
-        redirect_to error_path
-        
+      if !signed_in?
+        redirect_to new_user_session_path
+      else
+        if current_user.admin == false
+          redirect_to error_path
+        end
       end
     end
 
@@ -24,6 +24,4 @@ module Admin
     #   params[:per_page] || 20
     # end
   end
-
-
 end

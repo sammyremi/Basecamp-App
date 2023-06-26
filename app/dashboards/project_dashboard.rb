@@ -9,7 +9,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
-    discussion: Field::String,
+    description: Field::Text,
     name: Field::String,
     user: Field::BelongsTo,
     created_at: Field::DateTime,
@@ -23,7 +23,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = %i[
     id
-    discussion
+    description
     name
     user
   ].freeze
@@ -32,7 +32,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
     id
-    discussion
+    description
     name
     user
     created_at
@@ -43,7 +43,7 @@ class ProjectDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
-    discussion
+    description
     name
     user
   ].freeze

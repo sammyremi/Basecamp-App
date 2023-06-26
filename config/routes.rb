@@ -1,29 +1,18 @@
 Rails.application.routes.draw do
-
-  get "error", to: "home#error"
-  
   namespace :admin do
       resources :projects
       resources :users
 
       root to: "projects#index"
     end
-  devise_for :users, :controllers => {registrations: 'registrations'}
-  
+  root "home#index"
+  resources :projects
+  devise_for :users
+
+
   devise_scope :user do
     get '/users/sign_out', to: 'devise/sessions#destroy'
   end
-  
-  resources :projects
-  root 'home#index'
 
-  get "admin", to: "home#admin"
-
-
-
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/error", to: "home#error"
 end
-

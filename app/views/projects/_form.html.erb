@@ -17,15 +17,15 @@
   </div>
 
   <div>
-    <%= form.label :discussion, style: "display: block" %>
-    <%= form.text_area :discussion %>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
   </div>
-
-  <div>
-
-  <%= form.number_field :user_id, id: :project_user_id, value: current_user.id, type: :hidden %>
-
-</div>
+  
+  <% if signed_in? %>
+    <div>
+      <%= form.hidden_field :user_id, value: current_user.id %>
+    </div>
+  <%end%>
 
   <div>
     <%= form.submit %>

@@ -46,7 +46,7 @@ if port keeps showing already in use run
     bundle exec puma -C config/puma.rb -b tcp://127.0.0.1:3001
 
 ```
-./my_project Samuel Adebayo,  Abeeb Raheem
+./my_project Samuel Adebayo
 ```
 
 ### The Core Team
